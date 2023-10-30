@@ -13,30 +13,31 @@ basic.showIcon(IconNames.Happy)
 basic.pause(500)
 basic.clearScreen()
 
-// press "A" button
+// p seress "A" button
 input.onButtonPressed(Button.A, function () {
-    basic.clearScreen()
-    loopCounter = 0
-    sprite = game.createSprite(0, 0)
-    while (loopCounter <= 5) {
-        basic.pause(500)
-        sprite.move(1)
-        loopCounter = loopCounter + 1
-    }
-    sprite.delete()
-    basic.showIcon(IconNames.Happy)
+  // setup
+  basic.clearScreen()
+  loopCounter = 0
+  sprite = game.createSprite(0, 0)
+  while (loopCounter <= 5) {
+    basic.pause(500)
+    sprite.move(1)
+    loopCounter = loopCounter + 1
+  }
+  sprite.delete()
+  basic.showIcon(IconNames.Happy)
 })
 
 // press "B" button
 input.onButtonPressed(Button.B, function () {
-    basic.clearScreen()
-    loopCounter = 5
-    sprite = game.createSprite(5, 0)
-    while (loopCounter >= 0) {
-        basic.pause(500)
-        sprite.move(-1)
-        loopCounter = loopCounter - 1
-    }
-    sprite.delete()
-    basic.showIcon(IconNames.Happy)
+  basic.clearScreen()
+  loopCounter = 5
+  sprite = game.createSprite(5, 0)
+  while (loopCounter >= 0) {
+    basic.pause(500)
+    sprite.move(-1)
+    loopCounter = loopCounter - 1
+  }
+  sprite.delete()
+  basic.showIcon(IconNames.Happy)
 })
