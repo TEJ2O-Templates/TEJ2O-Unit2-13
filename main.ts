@@ -2,7 +2,7 @@
  *
  * Created by: Mr. Coxall
  * Created on: Sep 2020
- * This program showsa while loop
+ * This program shows a while loop
 */
 
 let sprite: game.LedSprite = null
@@ -32,7 +32,7 @@ input.onButtonPressed(Button.A, function () {
 input.onButtonPressed(Button.B, function () {
   basic.clearScreen()
   loopCounter = 5
-  sprite = game.createSprite(5, 0)
+  sprite = game.createSprite(5, 5)
   while (loopCounter >= -1) {
     basic.pause(500)
     sprite.set(LedSpriteProperty.X, loopCounter)
