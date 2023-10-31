@@ -21,7 +21,7 @@ input.onButtonPressed(Button.A, function () {
   sprite = game.createSprite(0, 0)
   while (loopCounter <= 5) {
     basic.pause(500)
-      sprite.set(LedSpriteProperty.X, loopCounter)
+    sprite.set(LedSpriteProperty.X, loopCounter)
     loopCounter = loopCounter + 1
   }
   sprite.delete()
